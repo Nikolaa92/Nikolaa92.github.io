@@ -130,7 +130,7 @@ nav [class*='fa-']:hover {
   color: var(--olive);
 }
 .button {
-  background-color: var(--olive);
+  background-color: var(--dkblue);
   color: white;
   padding: 0.5rem;
   border-radius: 5px;
@@ -138,7 +138,7 @@ nav [class*='fa-']:hover {
 
 .button:hover {
   color: white;
-  background-color: var(--green);
+  background-color: var(--lblue);
 }
 /* footer section */
 footer {
