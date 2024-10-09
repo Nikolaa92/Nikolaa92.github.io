@@ -48,7 +48,9 @@ a:hover {
 }
 /* intro styles */
 #intro {
-  padding-bottom: 10rem;
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #intro p {
@@ -73,6 +75,11 @@ a:hover {
   font-size: 4rem;
 }
 
+/* background color divs */
+.section-dkblue {
+  background-color: var(--lblue);
+}
+
 /* contact section */
 
 #contact {
@@ -80,6 +87,7 @@ a:hover {
   text-align: center;
   margin: 0 auto;
   padding: 3rem 0;
+  background-color: var(--lblue);
 }
 
 #contact p:last-child {
@@ -130,19 +138,22 @@ nav [class*='fa-']:hover {
   color: var(--olive);
 }
 .button {
-  background-color: var(--dkblue);
+  background-color: var(--green);
   color: white;
   padding: 0.5rem;
   border-radius: 5px;
+  font-family: var(--mono);
+  text-decoration: none;
 }
 
 .button:hover {
   color: white;
-  background-color: var(--lblue);
+  background-color: var(--olive);
 }
 /* footer section */
 footer {
   text-align: center;
+  padding: 4rem 0;
 }
 footer ul {
   list-style-type: none;
