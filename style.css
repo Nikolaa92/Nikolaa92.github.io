@@ -1,6 +1,7 @@
 /* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
 :root {
   --black: #171321;
+  --dkblack: #210702;
   --dkblue: #455473;
   --plum: #4b0d49;
   --lblue: #6080bf;
@@ -76,8 +77,15 @@ a:hover {
 }
 
 /* background color divs */
-.section-dkblue {
+.section-lblue {
   background-color: var(--lblue);
+}
+.gradient {
+  background: linear-gradient(90deg, rgba(154, 166, 68, 1) 4%, rgba(217, 200, 169, 1) 96%);
+  height: 2px;
+}
+.section-dkblue {
+  background-color: var(--dkblue);
 }
 
 /* contact section */
@@ -164,6 +172,49 @@ footer ul {
   justify-content: center;
   gap: 3rem;
   font-size: 3rem;
+}
+
+/* Projects section */
+
+#projects {
+  padding: 4rem 1rem;
+}
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: calc(2.5rem * 1.5);
+}
+#projects h3 {
+  color: var(--sand);
+}
+#projects h4 {
+  font-size: 1rem;
+  font-family: var(--mono);
+  margin: 0;
+}
+.blackbox {
+  background-color: var(--black);
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#projects ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
+}
+#projects img {
+  margin: 2rem 0 4rem 0;
+  border-left: 1px solid var(--sand);
+  border-top: 1px solid var(--sand);
+  border-radius: 25px;
+  padding: 1rem;
 }
 @media (min-width: 850px) {
   nav {
