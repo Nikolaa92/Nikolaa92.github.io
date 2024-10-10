@@ -47,6 +47,9 @@ a:hover {
   color: var(--green);
   text-decoration: none;
 }
+img {
+  width: 100%;
+}
 /* intro styles */
 #intro {
   padding: 4rem 1rem 10rem 1rem;
@@ -216,6 +219,28 @@ footer ul {
   border-radius: 25px;
   padding: 1rem;
 }
+
+@media (min-width: 550px) {
+  article {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+  }
+  .text {
+    order: 2;
+    text-align: right;
+    grid-column: 5/11;
+    grid-row: 1/2;
+  }
+  #projects img {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+  #projects ul {
+    justify-content: flex-end;
+  }
+}
+
 @media (min-width: 850px) {
   nav {
     max-width: 1200px;
