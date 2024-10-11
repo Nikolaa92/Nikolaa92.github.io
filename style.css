@@ -1,7 +1,7 @@
 /* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
 :root {
   --black: #171321;
-  --dkblack: #210702;
+  --dkbrown: #28221a;
   --dkblue: #455473;
   --plum: #4b0d49;
   --lblue: #6080bf;
@@ -14,7 +14,7 @@
   --white: #f7f8fa;
   --font-size: 1.3rem;
   --mono: 'Oxygen mono', monospace;
-  --sans: Oxygen, sans-serif;
+  --heading: Oxygen, sans-serif;
 }
 /* border box model: https://css-tricks.com/box-sizing/ */
 html {
@@ -181,6 +181,8 @@ footer ul {
 
 #projects {
   padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 #projects h2 {
   font-size: 2.5rem;
@@ -232,12 +234,26 @@ footer ul {
     grid-column: 5/11;
     grid-row: 1/2;
   }
+
   #projects img {
     grid-column: 1/6;
     grid-row: 1/2;
   }
   #projects ul {
     justify-content: flex-end;
+  }
+
+  #projects .reverse .text {
+    grid-column: 1/7;
+    order: 2;
+    text-align: left;
+  }
+  #projects .reverse img {
+    grid-column: 6/11;
+    grid-row: 1/2;
+  }
+  #projects .reverse .ul {
+    justify-content: flex-start;
   }
 }
 
