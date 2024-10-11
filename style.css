@@ -241,6 +241,7 @@ footer ul {
   }
   #projects ul {
     justify-content: flex-end;
+    padding-left: 6rem;
   }
 
   #projects .reverse .text {
@@ -252,8 +253,10 @@ footer ul {
     grid-column: 6/11;
     grid-row: 1/2;
   }
-  #projects .reverse .ul {
+  #projects .reverse ul {
     justify-content: flex-start;
+    padding-right: 5rem;
+    padding-left: 0;
   }
 }
 
