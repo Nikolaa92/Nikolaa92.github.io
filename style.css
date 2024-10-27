@@ -222,6 +222,8 @@ footer ul {
   padding: 1rem;
 }
 
+/* media section */
+
 @media (min-width: 550px) {
   article {
     display: grid;
