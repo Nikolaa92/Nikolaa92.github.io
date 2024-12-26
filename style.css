@@ -46,6 +46,10 @@ a:hover {
 img {
   width: 100%;
 }
+iframe {
+  width: 100%;
+  height: 330px;
+}
 /* intro styles */
 #intro {
   padding: 4rem 1rem 10rem 1rem;
@@ -217,6 +221,15 @@ footer ul {
   border-radius: 25px;
   padding: 1rem;
 }
+#projects iframe {
+  margin: 2rem 0 4rem 0;
+  border-left: 1px solid var(--sand);
+  border-top: 1px solid var(--sand);
+  border-bottom: none;
+  border-right: none;
+  border-radius: 25px;
+  padding: 1rem;
+}
 
 /* media section */
 
@@ -248,6 +261,10 @@ footer ul {
     text-align: left;
   }
   #projects .reverse img {
+    grid-column: 6/11;
+    grid-row: 1/2;
+  }
+  #projects .reverse iframe {
     grid-column: 6/11;
     grid-row: 1/2;
   }
